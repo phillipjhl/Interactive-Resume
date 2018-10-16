@@ -60,6 +60,19 @@ body {
     transform: rotate(34deg);
 }
 
+.name-block-container h1, .name-block-container h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.name-block-container h2 {
+    font-size: 26px;
+    min-height: 26px;
+}
+
 .menu-blocks {
     transition: all 0.5s;
 }
@@ -187,4 +200,8 @@ h2.contact.menu-item:before {
 
 .contact-block:hover {
     border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+a:hover {
+    text-decoration: none;
 }

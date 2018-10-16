@@ -1,4 +1,7 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
+
+import Carousel from './Carousel';
 
 class HomePage extends Component {
 
@@ -19,6 +22,7 @@ class HomePage extends Component {
                         <div className="name-block">
                             <div className="name-block-container">
                                 <h1 className="text-primary"><span>Hi, I'm</span>Phillip Langland</h1>
+                                <Carousel />
                             </div>
                         </div>
 
@@ -36,11 +40,13 @@ class HomePage extends Component {
                                 </div>
                             </div>
 
-                            <div className="contact-block menu-block">
-                                <div className="contact-block-container">
-                                    <h2 className="contact menu-item text-primary">Contact</h2>
+                            <Link to='/contact'>
+                                <div className="contact-block menu-block">
+                                    <div className="contact-block-container">
+                                        <h2 className="contact menu-item text-primary">Contact</h2>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
 
                         </div>
                     </div>
