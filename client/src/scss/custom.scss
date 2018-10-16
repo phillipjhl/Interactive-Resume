@@ -172,6 +172,22 @@ h2.menu-item:after {
     transition: all 0.5s ease;
 }
 
+.btn-download {
+    border: none;
+    position: relative;
+    font-size: 14px;
+    padding: 16px 55px 16px 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-download svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
 h2.about.menu-item:before {
     content: '01';
 }
@@ -182,6 +198,29 @@ h2.portfolio.menu-item:before {
 
 h2.contact.menu-item:before {
     content: '03';
+}
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #FFF;
+}
+
+.social a {
+    color: #FFF;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    bottom: 15%;
 }
 
 
@@ -204,4 +243,15 @@ h2.contact.menu-item:before {
 
 a:hover {
     text-decoration: none;
+}
+
+.btn-download:hover {
+    border: none;
+    background-color: #333;
+    letter-spacing: 2px;
+}
+
+.social path:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    fill: #333;
 }

@@ -18,17 +18,18 @@
     }
 };
     
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+};
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
 };
     
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-};
     
     
 
@@ -55,6 +56,14 @@
         transform: rotate(-34deg);
         left: -190px;
         top: 10px;
+    }
+};
+
+
+
+@media (max-width: 800px) {
+    .social {
+        position: relative;
     }
 };
     
@@ -136,7 +145,11 @@
 
 
 @media (max-width: 800px) {
-    .name-block, .about-block, .portfolio-block, .blog-block, .contact-block {
+    .name-block, 
+    .about-block, 
+    .portfolio-block, 
+    .blog-block, 
+    .contact-block {
         position: relative;
         -ms-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
@@ -152,7 +165,11 @@
 };
 
 @media (max-width: 800px) and (orientation: landscape) {
-    .name-block, .about-block, .portfolio-block, .blog-block, .contact-block {
+    .name-block, 
+    .about-block, 
+    .portfolio-block, 
+    .blog-block, 
+    .contact-block {
         position: relative;
         -ms-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
@@ -168,13 +185,20 @@
 };
 
 @media (max-width: 800px) {
-    .name-block-container, .about-block-container, .portfolio-block-container, .blog-block-container, .contact-block-container {
+    .name-block-container, 
+    .about-block-container, 
+    .portfolio-block-container, 
+    .blog-block-container, 
+    .contact-block-container {
         -ms-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         padding: 0 0 0 0;
     }
 };
+
+
+
 
 @media (max-width: 800px){
     h2.menu-item {
@@ -189,5 +213,27 @@
         font-size: 20px;
         line-height: 2em;
         margin: 25px 0 25px 40px;
+    }
+};
+
+@media (max-width: 767px) {
+    h2.menu-item:before {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        font-size: 14px;
+    }
+;}
+
+@media (max-width: 800px) {
+    h2.menu-item:after {
+        position: absolute;
+        content: '';
+        top: 15px;
+        left: -20px;
+        width: 70px;
+        height: 1px;
+        background: #FFF;
+        transition: all 0.5s ease;
     }
 };
