@@ -1,8 +1,11 @@
-//bootstrap overides
+//Bootstrap overides
 @import "./variables.scss";
 
 //Bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-//Custom
+//Custom styles
 @import "./custom.scss";
+
+//Custom media breakpoints
+@import "./media.scss";
