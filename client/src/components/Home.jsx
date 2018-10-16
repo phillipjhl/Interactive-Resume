@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import Carousel from './Carousel';
+import NameBlock from './NameBlock';
 
 class HomePage extends Component {
 
@@ -19,12 +19,7 @@ class HomePage extends Component {
 
                     <div className="container">
 
-                        <div className="name-block">
-                            <div className="name-block-container">
-                                <h1 className="text-primary"><span>Hi, I'm</span>Phillip Langland</h1>
-                                <Carousel />
-                            </div>
-                        </div>
+                        <NameBlock />
 
                         <div className="menu-blocks">
 
