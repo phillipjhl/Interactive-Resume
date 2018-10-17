@@ -17,9 +17,13 @@ body {
     height: 100vh;
     position: fixed;
     overflow: hidden;
-    background-size: cover;
-    background: black;
     z-index: 0;
+}
+
+.img-bg {
+    height: auto;
+    max-width: 100%;
+    position: absolute;
 }
 
 .overlay {
@@ -39,6 +43,7 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
+    opacity: 0.95;
 }
 
 .name-block {
