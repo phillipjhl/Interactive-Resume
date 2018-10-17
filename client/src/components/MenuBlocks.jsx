@@ -11,17 +11,21 @@ export default class MenuBlocks extends Component {
 
             <div className="menu-blocks">
 
-                <div className="about-block menu-block bg-compliment">
-                    <div className="about-block-container">
-                        <h2 className="about menu-item text-primary">Resume</h2>
+                <Link to='/menu/resume'>
+                    <div className="about-block menu-block bg-compliment">
+                        <div className="about-block-container">
+                            <h2 className="about menu-item text-primary">Resume</h2>
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="portfolio-block menu-block bg-contrast">
-                    <div className="portfolio-block-container">
-                        <h2 className="portfolio menu-item text-secondary">Portfolio</h2>
+                <Link to='/menu/portfolio'>
+                    <div className="portfolio-block menu-block bg-contrast">
+                        <div className="portfolio-block-container">
+                            <h2 className="portfolio menu-item text-secondary">Portfolio</h2>
+                        </div>
                     </div>
-                </div>
+                </Link>
 
                 <Link to='/menu/contact'>
                     <div className="contact-block menu-block bg-primary">
