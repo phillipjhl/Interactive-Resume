@@ -23,7 +23,7 @@ export default class MenuBlocks extends Component {
                     </div>
                 </div>
 
-                <Link to='/contact'>
+                <Link to='/menu/contact'>
                     <div className="contact-block menu-block bg-primary">
                         <div className="contact-block-container">
                             <h2 className="contact menu-item text-secondary">Contact</h2>
