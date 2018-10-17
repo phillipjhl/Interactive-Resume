@@ -13,11 +13,11 @@ import Carousel from './Carousel';
 export default function NameBlock(props) {
 
     return (
-        <div className="name-block">
+        <div className="name-block bg-secondary">
             <div className="name-block-container">
                 <h1 className="text-primary"><span>Hi, I'm</span>Phillip Langland</h1>
                 <Carousel />
-                <a target="_blank" href={resume} className="btn btn-download bg-secondary my-4">
+                <a target="_blank" href={resume} className="btn btn-download bg-compliment my-4">
                     Download Resume
                     <FontAwesomeIcon icon={faCloudDownloadAlt} size="lg" />
                 </a>
