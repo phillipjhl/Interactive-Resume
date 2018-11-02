@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import HomePage from './Home';
 
 export default class MenuNav extends Component {
 
@@ -14,6 +15,7 @@ export default class MenuNav extends Component {
                 <Fragment>
                     <NavBar />
                     <Switch>
+                        <Route exact path="/" component={HomePage} />
                         <Route path="/menu/resume" component={Resume} />
                         <Route path="/menu/portfolio" component={Portfolio} />
                         <Route path="/menu/contact" component={Contact} />

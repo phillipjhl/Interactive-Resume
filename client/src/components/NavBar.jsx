@@ -8,7 +8,8 @@ function NavBar(props) {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbar">
-                <div className="navbar-nav flex-row-reverse">
+                <div className="navbar-nav flex-row">
+                    <Link to="/" className="nav-item nav-link text-primary">Home</Link>
                     <Link to="/menu/resume" className="nav-item nav-link text-primary">Resume</Link>
                     <Link to="/menu/portfolio" className="nav-item nav-link text-primary">Portfolio</Link>
                     <Link to="/menu/contact" className="nav-item nav-link text-primary">Contact</Link>
