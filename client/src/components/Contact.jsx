@@ -30,8 +30,8 @@ class Contact extends Component {
         e.preventDefault();
         sendContactEmail(this.state.name, this.state.email, this.state.message)
         .then(() => {
-            //redirect to homepage
             //display thank you modal
+            //redirect to homepage
             this.props.history.push('/');
         }).catch(err => {
             console.log(err);
@@ -40,20 +40,21 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container mx-auto bg-light">
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
-                        <input id="name" name="name" type="text" className="form-control" onChange={this.handleChange} required />
+                        <input id="name" name="name" type="text" className="form-control" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email Address</label>
-                        <input id="email" name="email" type="email" className="form-control" onChange={this.handleChange} required />
+                        <input id="email" name="email" type="email" className="form-control" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
-                        <textarea cols="30" rows="10" name="message" className="form-control" onChange={this.handleChange}></textarea>
+                        <label htmlFor="mesaage">Message</label>
+                        <textarea id="message" cols="30" rows="10" name="message" className="form-control" onChange={this.handleChange} required></textarea>
                     </div>
-                    <button type="submit" onClick={this.handleSubmit} className="btn btn-success">Submit</button>
+                    <button id="message-submit" type="submit" onClick={this.handleSubmit} className="btn btn-contrast">Send Message</button>
                 </form>
             </div>
         );
