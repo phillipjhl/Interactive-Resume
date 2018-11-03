@@ -29,26 +29,32 @@ class Contact extends Component {
     handleSubmit(e) {
         e.preventDefault();
         sendContactEmail(this.state.name, this.state.email, this.state.message)
-        .then(() => {
-            //display thank you modal
-            //redirect to homepage
-            this.props.history.push('/');
-        }).catch(err => {
-            console.log(err);
-        });
+            .then(() => {
+                //display thank you modal
+                //redirect to homepage
+                this.props.history.push('/');
+            }).catch(err => {
+                console.log(err);
+            });
     }
 
     render() {
         return (
-            <div className="container mx-auto bg-light">
-                <form onSubmit={this.handleSubmit}>
+            <div className="container-fluid mx-auto bg-light">
+
+                <div className="container mx-auto mt-5">
+                    <h1 className="">LET'S WORK TOGETHER</h1>
+                    <hr />
+                </div>
+
+                <form className="col-sm-9 mx-auto" onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
-                        <input id="name" name="name" type="text" className="form-control" onChange={this.handleChange} required/>
+                        <input id="name" name="name" type="text" className="form-control" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email Address</label>
-                        <input id="email" name="email" type="email" className="form-control" onChange={this.handleChange} required/>
+                        <input id="email" name="email" type="email" className="form-control" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="mesaage">Message</label>
@@ -56,6 +62,7 @@ class Contact extends Component {
                     </div>
                     <button id="message-submit" type="submit" onClick={this.handleSubmit} className="btn btn-contrast">Send Message</button>
                 </form>
+
             </div>
         );
     }
